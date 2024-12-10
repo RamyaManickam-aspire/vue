@@ -1,0 +1,33 @@
+{
+  "name": "re-call",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-unit-jest": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
+    "@vue/vue3-jest": "^29.2.6",
+    "axios": "^1.7.9",
+    "vee-validate": "^4.14.7",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "vuex": "^4.0.2",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/test-utils": "^2.4.6",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "vite": "^6.0.1",
+    "vue-jest": "^3.0.7"
+  }
+}
