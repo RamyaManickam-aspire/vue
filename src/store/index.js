@@ -1,36 +1,6 @@
 import axios from "axios";
 import { createStore } from "vuex";
 
-// const store = createStore({
-//   state: {
-//     count: 0,
-//   },
-//   getters: {
-//     doubleCount: (state) => state.count * 2,
-//   },
-//   mutations: {
-//     increment(state) {
-//       state.count++;
-//     },
-//     decrement(state) {
-//       state.count--;
-//     },
-//   },
-//   actions: {
-//     async asyncIncrement({ commit }) {
-//       debugger;
-//       setTimeout(() => {
-//         commit("increment");
-//       }, 1000);
-//     },
-//     async asyncDecrement({ commit }) {
-//       setTimeout(() => {
-//         commit("decrement");
-//       }, 1000);
-//     },
-//   },
-// });
-// export default store;
 const store = createStore({
   state: {
     categories: [],
@@ -105,7 +75,7 @@ const store = createStore({
     async getWeather({ commit }, city) {
       axios
         .get(
-          `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=33c369825ed105b8925f9237ad823627&units={unit}`
+          `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=&units={unit}`
         )
         .then((res) => {
           commit("setWeather", res.data);
